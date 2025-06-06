@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: 'black', // black bar no topo e fundo
-    paddingTop: 32,
+    paddingTop: 37,
     paddingBottom: 47,
   },
   container: {
