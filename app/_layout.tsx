@@ -1,7 +1,7 @@
 import { useFonts } from 'expo-font';
 import 'react-native-reanimated';
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 export default function RootLayout() {
@@ -15,16 +15,21 @@ export default function RootLayout() {
   }
 
   return (
-    <View style={styles.container}>
-      <WebView source={{ uri: 'https://app.appsmith.com/app/energy-control-mobile/login-683d8b75fe677b0402bfcd94?embed=true' }} style={{ flex: 1 }} />
-    </View>
+    <SafeAreaView style={styles.safeArea}>
+      <WebView source={{ uri: 'https://app.appsmith.com/app/energy-control-mobile/login-683d8b75fe677b0402bfcd94?embed=true' }} style={styles.container} />
+    </SafeAreaView>
   )
 }
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: 'black', // black bar no topo e fundo
+    paddingTop: 32,
+    paddingBottom: 47,
+  },
   container: {
     flex: 1,
-    paddingTop: 25,
-    overflow: "hidden"
+    overflow: "hidden",
   },
 })
