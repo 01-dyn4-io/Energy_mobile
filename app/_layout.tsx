@@ -1,7 +1,7 @@
 import { useFonts } from 'expo-font';
 import 'react-native-reanimated';
 import React from 'react';
-import { View, StyleSheet, SafeAreaView } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 export default function RootLayout() {
