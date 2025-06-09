@@ -24,7 +24,7 @@ export default function RootLayout() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: 'black', // black bar no topo e fundo
+    backgroundColor: 'black',
     paddingTop: 37,
     paddingBottom: 47,
   },
